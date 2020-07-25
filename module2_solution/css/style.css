@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0px;
+  color: darkslategray;
+}
+
+.row {
+  width: 100%;
+}
+p {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: cursive;
+}
+
+#d1 {
+  background-color: pink;
+}
+#d2 {
+  background-color: brown;
+  color: white;
+}
+#d3 {
+  background-color: sandybrown;
+}
+.dish {
+  width: 35%;
+  text-align: center;
+  position: relative;
+  left: 65%;
+  font-size: 1.5em;
+  overflow: hidden;
+  border: 2px solid black;
+}
+.col-lg-4,
+.col-md-6 {
+  background-color: gray;
+  float: left;
+  border: 2px solid black;
+  margin-bottom: 1.6%;
+  margin-left: 1.6%;
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 31%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 48%;
+  }
+  .col-lg-4:nth-child(3) {
+    width: 97.6%;
+  }
+}
